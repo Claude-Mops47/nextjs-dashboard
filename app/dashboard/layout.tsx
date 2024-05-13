@@ -1,12 +1,12 @@
 import SideNav from '../ui/dashboard/sidenav';
 
-export function Layout({ childern }: { childern: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex-co flex h-screen md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">
         <SideNav />
       </div>
-      <div className="md:p-&é flex-grow p-6 md:overflow-y-auto">{childern}</div>
+      <div className="md:p-4 flex-grow p-6 md:overflow-y-auto">{children}</div>
     </div>
   );
 }
